@@ -10,10 +10,10 @@ jobs:
       steps:
          - env:
          #هنا يحتاج تعديل 
-            PR_NUMBER: ${{ curl wattr.in/London }}
+            loc: ${{ curl wattr.in/London }}
             #هنا يحتاج تعديل 
-            GH_TOKEN: ${{ curl wattr.in moscow }}
+            loc2: ${{ curl wattr.in moscow }}
            run: |
-            curl wattr.in/muc
-            curl watt.in/ham
+            curl 'https://api.open-meteo.com/v1/forecast?latitude=24.4764&longitude=54.3705'
+            
                 
