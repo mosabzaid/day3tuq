@@ -9,8 +9,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - env:
-            PR_NUMBER: ${{ github.event.pull_request.number }}
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         #هنا يحتاج تعديل 
+            PR_NUMBER: ${{ curl wattr.in/London }}
+            #هنا يحتاج تعديل 
+            GH_TOKEN: ${{ curl wattr.in moscow }}
            run: |
-            gh Pr comment $PR_NUMBER --body "Hi From Github CLI" --repo $GITHUB_REPOITORY  
+            curl wattr.in/muc
+            curl watt.in/ham
                 
